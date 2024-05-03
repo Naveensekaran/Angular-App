@@ -1,0 +1,31 @@
+
+<head>
+    <link rel="stylesheet" href="create-employee.component.css">
+</head>
+<body>
+    <div class="container">
+    <div class="content">
+    <header class="header">
+    <h2>Create Employee Details</h2>
+    </header>
+    <form (ngSubmit) = "onSubmit()">
+    <div class="input">
+        <label for="name">Enter Name</label><input type="text" [(ngModel)]="employee.empName" name="empName" id="name" class="in" required>
+    </div>
+    <div class="input">
+        <label for="age">Enter Age</label><input type="text" [(ngModel)]="employee.empAge" name="empAge" id="age" class="in" required>
+    </div>
+    <div class="input">
+        <label for="gender">Select Gender</label> <input type="radio" [(ngModel)]="employee.empGender" name="empGender" value="MALE"> MALE <br> <input type="radio" [(ngModel)]="employee.empGender" name="empGender" value="FEMALE"> FEMALE <br> 
+    </div>
+    <div class="input">
+        <label for="position">Enter Position</label><input type="text" [(ngModel)]="employee.empPosition" name="empPosition" id="position" class="in" required>
+    </div>
+    <div class="input">
+        <label for="salary">Enter Salary</label><input type="text" [(ngModel)]="employee.empSalary" name="empSalary" id="salary" class="in" required>
+    </div>
+    <input type="submit" class="btn">
+    </form>
+    </div>
+    </div>
+</body>

@@ -1,0 +1,35 @@
+<head>
+    <link rel="stylesheet" href="employee-list.component.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+    <h1>Employee Details</h1>
+    </header>
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>POSITION</th>
+            <th>SALARY</th>
+            <th>EDIT</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.empName}}</td>
+            <td>{{employee.empAge}}</td>
+            <td>{{employee.empGender}}</td>
+            <td>{{employee.empPosition}}</td>
+            <td>{{employee.empSalary}}</td>
+            <td><button (click)="updateEmployee(employee.id)" class="btn btn-success">Update</button>
+                 <button class="btn btn-danger" (click)="deleteEmployee(employee.id)">Delete</button></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</body>

@@ -1,0 +1,14 @@
+.header{
+    background-color: rgba(201, 0, 0, 0.884);
+    height: 100px;
+    padding-left: 40px;
+    padding-top: 9px;
+    color: white;
+}
+th{
+    background-color: black;
+    color: white;
+}
+.btn{
+    margin-left: 15px;
+}
